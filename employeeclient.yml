@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: employee-client
+  datasource:
+    url: jdbc:h2:mem:employeedb
+    driver-class-name: org.h2.Driver
+    username: employee
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8082
+application:
+  baseurl:http://localhost:8080/api/employees
+
